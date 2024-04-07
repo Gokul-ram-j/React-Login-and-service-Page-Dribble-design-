@@ -67,7 +67,7 @@ const Profile = () => {
           </button> */}
           <Link
             style={{ textDecoration: "none", color: "white" }}
-            to="/verification"
+            to="/service"
           >
             <button
               className="submit-btn profile-submit-btn"

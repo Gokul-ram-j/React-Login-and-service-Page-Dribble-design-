@@ -1,5 +1,6 @@
 import { useState } from "react";
 import "./service.css";
+import { Link } from "react-router-dom";
 
 const Service = () => {
   let [valid, setValid] = useState(false);
@@ -82,6 +83,8 @@ const Service = () => {
           margin: "10px auto",
         }}
       >
+        <Link to="/verification">
+        
         <button
           disabled={!valid}
           style={
@@ -94,6 +97,7 @@ const Service = () => {
         >
           Finish
         </button>
+        </Link>
       </div>
       <p className="service-additional-info" style={valid?{display:"block"}:{display:"none"}}>Or press RETURN</p>
     </>
