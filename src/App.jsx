@@ -8,17 +8,13 @@ import { Routes, Route } from "react-router-dom";
 const App = () => {
   return (
     <>
-     
       <Routes>
-        <Route index element={<Form/>}/>
-        <Route path="/profile" element={<Profile/>}/>
-        <Route path="/service" element={<Service/>}/>
-        <Route path="/verification" element={<Verification/>}/>
+          <Route path="/" element={<Form/>}/>
+          <Route path="/profile" element={<Profile />} />
+          <Route path="/service" element={<Service />} />
+          <Route path="/verification" element={<Verification />} />
       </Routes>
-      <Footer/>
-
-      
-
+      <Footer />
     </>
   );
 };
