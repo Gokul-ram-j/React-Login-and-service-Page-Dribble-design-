@@ -1,0 +1,130 @@
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+
+*{
+    padding: 0%;
+    margin: 0%;
+}
+.head{
+    color: rgba(254, 18, 191, 0.941);
+
+}
+
+.intro-container{
+    width: 100vw;
+    min-height: 100vh;
+    display: grid;
+    grid-template-columns: .4fr .6fr;
+}
+
+.intro-context{
+    text-align: justify;
+    padding: 30px;
+    height: fit-content;
+    padding: 20px;
+}
+.intro-bg{
+    width: 100%;
+    height: 500px;
+}
+
+.intro-bg>img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+
+.head{
+    font-family: "Pacifico", cursive;
+}
+.sample-context{
+    font-weight: bold;
+    margin-top: 5%;
+}
+
+.member-signin{
+    text-align:end;
+    padding: 2% 2%;
+}
+.form-wrapper{
+    margin-left: 150px;
+    
+}
+.error-msg{
+    color: red;
+    display: none;
+}
+
+.name-container{
+    display: flex;
+    justify-content: flex-start;
+    column-gap: 10px;
+}
+
+
+label{
+    font-weight: bold;
+}
+input{
+    background: rgba(164, 161, 161, 0.42);
+    padding: 5px;
+    border-radius: 5px;
+    border: 0px;
+}
+
+
+
+form{
+    padding: 5px;
+    width: 405px;
+    
+}
+.email-container, .password-container, .terms-container, .additional-info{
+    margin-top: 25px;
+}
+
+.email-container>input, .password-container>input{
+    width: 100%;
+}
+
+.terms-container>p>input{
+    margin-right: 5px;
+}
+
+.submit-btn{
+    padding: 5px 15px;
+    color: white;
+    background: rgba(254, 18, 191, 0.941);
+    border: 0px;
+    border-radius: 5px;
+}
+
+
+
+@media all and (max-width:1200px) {
+    form{
+        margin: auto;
+    }
+    
+    .intro-container{
+        width: 100vw;
+        min-height: 100vh;
+        display: grid;
+        grid-template-columns: 1fr ;
+    }
+    .form-wrapper{
+        margin-left: 20px;
+        
+    }
+
+    .name-container{
+        display: grid;
+        grid-template-columns: 1fr ;
+    }
+    .name-container-1>input, .name-container-2>input{
+        width: 100%;
+    }
+    .name-container-2{
+        margin-top: 25px;
+    }
+}

@@ -1,0 +1,140 @@
+
+
+.profile-head{
+    margin: 20px 0px 0px 20px;
+    color: rgba(254, 18, 191, 0.941);
+    
+}
+
+.container{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    padding-top: 25px;
+}
+
+
+
+.header{
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.avatar-context, .location-context{
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.avatar-container{
+    display: grid;
+    grid-template-columns: 40% 60%;
+    
+}
+
+.profile-img{
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    border: 2px dashed grey;
+    
+}
+.profile-img>img{
+    border-radius: 50%;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.profile-controls{
+    padding-left: 25px;
+    margin-top: 10px;
+}
+
+input[type="file"] {
+    display: none;
+}
+  
+.custom-file-upload {
+border: 1px solid #ccc;
+border-radius: 5px;
+display: inline-block;
+padding: 6px 12px;
+cursor: pointer;
+}
+
+.default-btn{
+    border: 0px;
+    background: transparent;
+    color: rgba(0, 0, 0, 0.795);
+    margin-top: 5px;
+}
+
+.location-container{
+    margin-top: 15px;
+}
+.location-inp{
+    width: 100%;
+    background: transparent;
+    border-bottom: 1px solid rgba(71, 70, 70, 0.82);
+    border-radius: 0px;
+}
+
+.location-inp:focus{
+    outline: 0px;
+}
+
+.profile-submit-btn{
+    margin-top: 50px;
+    padding: 5px 75px;
+}
+
+.additional-info-next-btn{
+    margin-top: 5px;
+    padding-left: 20px;
+    color: rgba(0, 0, 0, 0.795);
+    display: none;
+}
+
+
+
+
+
+
+
+
+
+
+
+/* mobile view */
+@media all and (max-width:1100px) {
+    
+    .container{
+        
+        padding-top: 100px;
+    }
+    .avatar-container{
+        display: grid;
+        grid-template-columns: 1fr ;
+        
+    }
+    .profile-img{
+        margin: auto;
+    }
+    .profile-controls{
+        display: flex;
+        flex-direction: column;
+    }
+    .profile-submit-btn{
+        margin-top: 25px;
+        
+    }
+    .custom-file-upload{
+        margin-top: 5px;
+        margin-bottom: 5px;
+        width: fit-content;
+        margin-left: 22%;
+    }
+    
+
+}

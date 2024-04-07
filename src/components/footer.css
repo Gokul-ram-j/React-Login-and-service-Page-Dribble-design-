@@ -1,0 +1,22 @@
+
+*{
+    padding: 0%;
+    margin: 0%;
+}
+
+.footer{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100vw;
+    background: rgba(185, 176, 176, 0.301);
+    padding: 25px;
+    text-wrap: wrap;
+}
+
+.footer li{
+    list-style: none;
+}
+
+.footer li:first-child{
+    font-weight: bold;
+}
