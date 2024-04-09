@@ -9,10 +9,10 @@ const App = () => {
   return (
     <>
       <Routes>
-          <Route path="/Aeonaxy-Technologies-Private-Limited/" element={<Form/>}/>
-          <Route path="/Aeonaxy-Technologies-Private-Limited/profile" element={<Profile />} />
-          <Route path="/Aeonaxy-Technologies-Private-Limited/service" element={<Service />} />
-          <Route path="/Aeonaxy-Technologies-Private-Limited/verification" element={<Verification />} />
+          <Route path="/" element={<Form/>}/>
+          <Route path="/profile" element={<Profile />} />
+          <Route path="/service" element={<Service />} />
+          <Route path="/verification" element={<Verification />} />
       </Routes>
       <Footer />
     </>
