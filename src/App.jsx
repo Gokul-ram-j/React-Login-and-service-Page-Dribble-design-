@@ -8,7 +8,7 @@ import { Routes, Route, BrowserRouter } from "react-router-dom";
 const App = () => {
   return (
     <>
-      <BrowserRouter>
+      <BrowserRouter basename="/React-Login-and-service-Page-Dribble-design-">
         <Routes>
           <Route path="/" element={<Form />} />
           <Route path="/profile" element={<Profile />} />
