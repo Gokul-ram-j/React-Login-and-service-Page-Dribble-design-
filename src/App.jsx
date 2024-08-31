@@ -9,7 +9,7 @@ const App = () => {
   return (
     <>
       <BrowserRouter basename="/React-Login-and-service-Page-Dribble-design-">
-        <Routes>
+        <Routes basename="/React-Login-and-service-Page-Dribble-design-">
           <Route path="/" element={<Form />} />
           <Route path="/profile" element={<Profile />} />
           <Route path="/service" element={<Service />} />
