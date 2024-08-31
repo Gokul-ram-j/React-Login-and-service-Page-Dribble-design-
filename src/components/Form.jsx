@@ -1,7 +1,7 @@
 import "bootstrap/dist/css/bootstrap.min.css";
 import "./form.css";
 import { useState } from "react";
-import {Navigate} from "react-router-dom"
+import {useNavigate} from "react-router-dom"
 
 const Form = () => {
   function handleChange(e) {
@@ -11,7 +11,7 @@ const Form = () => {
       document.querySelector(".error-msg").style = "display:none;";
     }
   }
-
+const navigate=useNavigate()
   
   return (
     <>
@@ -22,7 +22,7 @@ const Form = () => {
             Discover the world's top Designer & creatives
           </h2>
           <div className="intro-bg">
-            <img src="/Data extraction-rafiki.png" alt="" />
+            <img src="assets/Data extraction-rafiki.png" alt="" />
           </div>
         </div>
 
@@ -33,7 +33,7 @@ const Form = () => {
           <div className="form-wrapper">
             <h1>Sign up to dribble</h1>
             <p className="error-msg">Username has already been taken</p>
-            <form action="/profile" >
+            <form action="" onSubmit={()=>navigate('/profile')} >
               <div className="name-container">
                 <div className="name-container-1">
                   <label htmlFor="name">Name</label>

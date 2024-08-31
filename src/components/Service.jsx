@@ -59,19 +59,19 @@ const Service = () => {
         <Option
           no="1"
           info="I'm a designer looking to share my work"
-          src="/Devices-rafiki.png"
+          src="assets/Devices-rafiki.png"
           additional_info="With over 7 million shots from a vast community of designers.Dribble is the leading source for design inpiration"
         ></Option>
         <Option
           no="2"
           info="I'm looking to hire a designer"
-          src="/Work in progress-cuate.png"
+          src="assets/Work in progress-cuate.png"
           additional_info="With over 7 million shots from a vast community of designers.Dribble is the leading source for design inpiration"
         ></Option>
         <Option
           no="3"
           info="I'm looking for a design inspiration"
-          src="/Working-pana.png"
+          src="assets/Working-pana.png"
           additional_info="With over 7 million shots from a vast community of designers.Dribble is the leading source for design inpiration"
         ></Option>
       </div>
